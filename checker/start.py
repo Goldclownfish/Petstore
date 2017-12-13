@@ -1,14 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import sys
 import logging
+import sys
 
-from proxytools.proxy_tester import check_proxies, get_local_ip
+from proxytools import utils
 from proxytools.proxy_scrapper import (scrap_sockslist_net,
                                        scrap_vipsocks24_net,
                                        scrap_proxyserverlist24_top)
-from proxytools import utils
+from proxytools.proxy_tester import check_proxies, get_local_ip
 
 logging.getLogger("requests").setLevel(logging.CRITICAL)
 logging.getLogger("urllib3").setLevel(logging.CRITICAL)
