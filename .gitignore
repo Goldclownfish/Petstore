@@ -1,3 +1,4 @@
-checker/proxies.txt
-checker/working_proxies.txt
+*.txt
+!requirements.txt
 checker/*.pyc
+config/*.ini
