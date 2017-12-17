@@ -74,14 +74,14 @@ def appendprox():
 
 def runchecks():
     log.info('Starting prox checks')
-    os.system('python checker/start.py -t 3 -f good.txt -o '
+    os.system('python checker/start.py -t 3 -r 40 -f good.txt -o '
                      'checked/rmgood.txt -er -r 2 -mc 600 -bs 600 -m http')
 
-    os.system('python checker/start.py -f good.txt --kinancity -bs 600 -o '
-                     'checked/kinangood.txt -er -r 2 -t 3 -mc 600 -m http')
+    os.system('python checker/start.py -f good.txt -r 40 --kinancity -bs 600 '
+                     '-o checked/kinangood.txt -er -r 2 -t 3 -mc 600 -m http')
 
-    os.system('python checker/start.py -f good.txt --clean -bs 600 -t 3 -o '
-                     'checked/freshgood.txt -er -t 3 -r 2 -mc 600 -m http')
+    os.system('python checker/start.py -f good.txt -r 40 --clean -bs 600 -t 3 '
+                     '-o checked/freshgood.txt -er -t 3 -r 2 -mc 600 -m http')
     log.info('Updating good.txt')
 
     infile = open("checked/freshgood.txt", "r")
@@ -136,7 +136,7 @@ def addtemplates():
 
 
 if __name__ == '__main__':
-    getprox()
+    #getprox()
     appendprox()
     runchecks()
     addtemplates()
