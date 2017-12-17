@@ -94,7 +94,7 @@ def addtemplates():
     if args.rmdirs is not None:
         log.info('replacing RM format proxies')
         for dir in args.rmdirs:
-            infile = open("checked/rmgood.txt", "r")
+            infile = open("checked/freshgood.txt", "r")
             outfile = open(dir, "w+")
             outfile.writelines(infile)
             infile.close()
