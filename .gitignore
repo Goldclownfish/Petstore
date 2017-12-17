@@ -2,10 +2,10 @@
 !requirements.txt
 checker/*.pyc
 config/*.ini
+templates/*
 !good.txt
 !checked
-!templates/
-templates/*
+!templates/templates.md
 actions.json
 args.pyc
 checker/proxytools/__init__.pyc
