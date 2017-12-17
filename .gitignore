@@ -2,3 +2,13 @@
 !requirements.txt
 checker/*.pyc
 config/*.ini
+!good.txt
+!checked
+!templates/
+templates/*
+actions.json
+args.pyc
+checker/proxytools/__init__.pyc
+checker/proxytools/proxy_scrapper.pyc
+checker/proxytools/proxy_tester.pyc
+checker/proxytools/utils.pyc

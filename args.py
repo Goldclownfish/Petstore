@@ -19,14 +19,24 @@ def get_args():
         default=False
         )
     parser.add_argument(
-        '--rmdir',
-        default=False
+        '--rmdirs',
+        default=None, action='append'
         )
     parser.add_argument(
         '--corsdir',
-        required=True
+        default=False
         )
+
     parser.add_argument(
         '--kinandir',
-        required=True
+        default=False
         )
+    parser.add_argument(
+        '--kinanuser',
+        default=False
+        )
+    parser.add_argument(
+        '--kinanstartdir',
+        default=False
+        )
+    return parser.parse_args()
