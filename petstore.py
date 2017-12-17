@@ -118,7 +118,7 @@ def addtemplates():
 
     if args.kinanuser:
         log.info('Making kinan start script')
-        rand = ''.join(random.choice(string.ascii_letters) for x in range(5))
+        rand = ''.join(random.choice(string.ascii_letters) for x in range(4))
         user = args.kinanuser + rand
 
         if args.kinanstartdir:
