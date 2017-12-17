@@ -136,7 +136,7 @@ def addtemplates():
 
 
 if __name__ == '__main__':
-    #getprox()
-    #appendprox()
-    #runchecks()
+    getprox()
+    appendprox()
+    runchecks()
     addtemplates()
